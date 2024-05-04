@@ -3,13 +3,10 @@
     margin: 0;
 }
 body{
-    scroll-behavior: smooth;
     background-image: url('bg.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
     background-size: cover;
-    height: 100vh;
-    overflow: hidden;
 }
 
 /*heading*/
@@ -17,7 +14,7 @@ body{
     background-color: rgba(255, 255, 255, 0.5);
     color: midnightblue;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0px;
     backdrop-filter: blur(10px);
     padding: 10px;
 }
@@ -25,16 +22,22 @@ body{
 .wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
+
 /*.fp{
     width: 300px;
     height:300px;
 }*/
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 18rem;
+    height: 350px;
+    box-shadow: 0px 5px 5px 0px;
+    margin: 10px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -50,7 +53,7 @@ body{
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+  /*.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
@@ -65,8 +68,9 @@ body{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    background: linear-gradient(to right , lightgreen,lightyellow,lightblue);
     color: black;
+    padding: 15px;
   }
   
   /* Style the back side */
@@ -74,5 +78,18 @@ body{
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
+  /*image*/
+.fp{
+  width: 250px;
+  height: 100px;
+}
+.fp:hover{
+  box-shadow: 0px 5px 5px 0px;
+  transition: 0.5s;
+}
+/*backside title*/
